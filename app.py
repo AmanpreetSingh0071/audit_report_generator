@@ -4,6 +4,14 @@ from data_fetcher import fetch_company_data, generate_audit_report
 
 # Streamlit UI
 st.set_page_config(page_title="KYB Due Diligence Tool", layout="centered")
+# 🔒 Hide GitHub icon, menu, and footer
+st.markdown("""
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+""", unsafe_allow_html=True)
 
 st.title("Know Your Business (KYB) Due Diligence Tool")
 

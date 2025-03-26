@@ -1,5 +1,6 @@
 # data_fetcher.py
 from groq import Groq
+import streamlit as st
 
 # Initialize the Groq client with your API key (replace with your actual key)
 client = Groq(api_key=st.secrets["GROQ_API_KEY"])
