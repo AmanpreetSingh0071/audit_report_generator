@@ -25,3 +25,14 @@ if company_name:
         
     except Exception as e:
         st.error(f"Error fetching data for {company_name}: {e}")
+
+# Adding the signature
+st.markdown(
+    """
+    <hr>
+    <div style="text-align:center; font-size: 12px; color: gray;">
+        Created by <strong>Amanpreet Singh</strong>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
